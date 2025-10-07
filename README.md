@@ -1,26 +1,21 @@
-﻿
----
-
-### 🤖 `quant-ml-lab/README.md`
-
-```markdown
-# Quant ML Lab 🤖  
-Machine Learning Systems for Signal Discovery, Prediction, and Portfolio Automation  
+﻿# 🤖 Quant ML Lab  
+**Machine Learning Systems for Signal Discovery, Prediction, and Portfolio Automation**
 
 ---
 
 ## 🔍 Overview
-This repository focuses on the **intersection of quantitative finance and machine learning**, building end-to-end ML pipelines for feature engineering, signal discovery, and model-based portfolio allocation.
+The **Quant ML Lab** explores the intersection of **quantitative finance and machine learning**, building modular, end-to-end research systems for feature engineering, signal discovery, model-based forecasting, and portfolio optimization.
 
-It bridges **financial domain expertise** with **applied ML systems engineering** — from data ingestion to model evaluation and alpha signal tracking.
+It bridges **financial domain expertise** with **ML systems engineering** — spanning the full lifecycle from data ingestion to model evaluation and alpha tracking.
 
 ---
 
 ## 🎯 Objectives
 - Engineer robust **financial features** and alpha signals  
 - Train and evaluate **ML models** for return and volatility forecasting  
-- Automate **data-to-signal pipelines** with modular systems design  
+- Automate **data-to-signal pipelines** using modular systems design  
 - Apply **explainability (SHAP, feature importance)** to quantify model intuition  
+- Benchmark classical quant factors vs. deep learning and RL-based models  
 
 ---
 
@@ -29,31 +24,63 @@ It bridges **financial domain expertise** with **applied ML systems engineering*
 |--------|--------------|
 | `data/` | Market and engineered datasets used for ML experiments |
 | `notebooks/` | EDA, model training, and signal validation notebooks |
-| `features/` | Feature engineering (technical indicators, spreads, volatility regimes) |
-| `models/` | ML models (regressors, tree ensembles, deep networks, RL agents) |
-| `systems/` | Pipeline orchestration, config files, and automated training scripts |
-| `evaluation/` | Model evaluation — IC, hit ratio, alpha decay, risk-adjusted performance |
-| `utils/` | Common helper functions (data loading, logging, plotting) |
-| `tests/` | Unit tests for data transforms and ML pipelines |
+| `features/` | Feature engineering — factors, spreads, volatility regimes |
+| `models/` | ML models (regressors, ensembles, deep networks, RL agents) |
+| `systems/` | End-to-end pipelines integrating data, features, and models |
+| `evaluation/` | Model evaluation — IC, hit ratio, alpha decay, and backtest metrics |
+| `utils/` | Helper functions for logging, data loading, and plotting |
+| `tests/` | Unit tests ensuring correctness and reproducibility |
 
 ---
 
 ## 🧰 Tech Stack
 - **Core:** Python, Pandas, NumPy  
-- **ML:** Scikit-learn, XGBoost, PyTorch  
+- **ML:** Scikit-learn, XGBoost, PyTorch, TensorFlow  
 - **Visualization:** Plotly, Matplotlib, SHAP  
-- **Automation:** Joblib, YAML configs  
+- **Automation:** Joblib, YAML configs, GitHub Actions  
+- **Finance APIs:** yfinance, FRED, Quandl  
 
 ---
 
+
+## 📈 Research Directions
+- Regime detection using clustering & HMMs  
+- Alpha factor engineering and feature selection  
+- Portfolio optimization via reinforcement learning  
+- Volatility forecasting using deep neural networks  
+- Explainability-driven model evaluation  
+
+---
+
+## 🤝 Contributing
+This project evolves continuously with new research directions.  
+Contributions are welcome via:
+- Pull requests with new models, pipelines, or features  
+- Reporting issues related to bugs or reproducibility  
+- Sharing datasets or alternative evaluation approaches  
+
+---
+
+## 📜 License
+This project is released under the **MIT License** — free to use, modify, and distribute with attribution.  
+*(Add full license text in a separate LICENSE file if desired)*
+
+---
+
+## 🧩 Author
+**Vivek Sarma** — Quant Finance & ML Research  
+*Exploring the convergence of Financial Markets, Data Science, and Systematic Research.*
+
+🔗 [GitHub Profile](https://github.com/viveksarmar)
+
 ## 🚀 Quickstart
 ```bash
-# (1) Optional: create and activate virtual env
+# (1) Optional: create and activate virtual environment
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
 # (2) Install dependencies
 pip install -r requirements.txt
 
-# (3) Run Jupyter notebooks or training pipeline
+# (3) Launch Jupyter Lab or run training pipeline
 jupyter lab
